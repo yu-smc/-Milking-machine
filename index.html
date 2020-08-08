@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
+  <body>
+    <model-viewer
+      id="model-viewer"
+      src="/src/handyfit.glb"
+      ios-src="src/handyfit.usdz"
+      alt="A 3D model of an astronaut"
+      shadow-intensity="1"
+      camera-controls=""
+      interaction-prompt="auto"
+      auto-rotate=""
+      ar=""
+      magic-leap=""
+      data-js-focus-visible=""
+      ar-status="not-presenting"
+    >
+      <button slot="ar-button" id="ar-button">
+        ARを試してみる
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </model-viewer>
+
+    <p class="description-text">
+      ボタンをクリックするとカメラが起動して<br />
+      AR体験をすることができます。<br />
+      ご自身でさく乳器のサイズを変更が可能です。<br />
+      ※最初に表示されるサイズは、スマホの機種により実際のサイズ感とは異なる場合があります。
+    </p>
+  </body>
+
+  <script src="main.js"></script>
+</html>

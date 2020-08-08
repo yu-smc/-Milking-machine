@@ -1,0 +1,22 @@
+{
+  "name": "af-img-tracking-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "browser-sync start --server --watch --https true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yu-smc/af-img-tracking-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yu-smc/af-img-tracking-test/issues"
+  },
+  "homepage": "https://github.com/yu-smc/af-img-tracking-test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

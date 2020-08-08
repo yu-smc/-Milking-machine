@@ -1,0 +1,54 @@
+* {
+  color: #565656;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+model-viewer {
+  height: 55vh;
+  height: calc(var(--vh, 1vh) * 60);
+  width: 65vw;
+  margin: 0 auto;
+  contain: inherit;
+}
+
+#ar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 58vh;
+  top: calc(var(--vh, 1vh) * 62);
+  right: 0;
+  left: 0;
+  width: 55vw;
+  padding: 8px 0;
+  margin: 0 auto;
+  z-index: 20;
+  background-color: white;
+  border: solid 1px #565656;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.fa-angle-right {
+  font-size: 22px;
+  margin-left: 4px;
+  position: relative;
+  top: 1.5px;
+}
+
+.description-text {
+  width: 90%;
+  margin: 0 auto;
+  top: 70vh;
+  top: calc(var(--vh, 1vh) * 74);
+  right: 0;
+  left: 0;
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+}
