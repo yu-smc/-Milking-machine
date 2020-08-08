@@ -12,6 +12,11 @@ model-viewer {
   contain: inherit;
 }
 
+small {
+  display: block;
+  margin-bottom: 8px;
+}
+
 #ar-button {
   display: flex;
   justify-content: center;
@@ -41,7 +46,7 @@ model-viewer {
   top: 1.5px;
 }
 
-.description-text {
+#ar-description-text {
   width: 90%;
   margin: 0 auto;
   top: 70vh;
@@ -52,4 +57,18 @@ model-viewer {
   font-size: 14px;
   text-align: center;
   line-height: 1.6;
+}
+
+#pc-alert-text {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  top: 60vh;
+  top: calc(var(--vh, 1vh) * 65);
+  right: 0;
+  left: 0;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.8;
 }
