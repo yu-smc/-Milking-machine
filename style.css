@@ -14,7 +14,7 @@ model-viewer {
 
 small {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 #ar-button {
@@ -50,11 +50,11 @@ small {
   width: 90%;
   margin: 0 auto;
   top: 70vh;
-  top: calc(var(--vh, 1vh) * 74);
+  top: calc(var(--vh, 1vh) * 72);
   right: 0;
   left: 0;
   position: absolute;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   line-height: 1.6;
 }
