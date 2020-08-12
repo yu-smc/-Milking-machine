@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+
+  <body>
+    <model-viewer
+      id="model-viewer-default"
+      src="src/handyfit2.glb"
+      ios-src="src/handyfit2.usdz"
+      alt="A 3D model of an milking machine"
+      shadow-intensity="1"
+      camera-controls=""
+      interaction-prompt="auto"
+      auto-rotate=""
+      ar=""
+      magic-leap=""
+      data-js-focus-visible=""
+      ar-status="not-presenting"
+    >
+      <button slot="ar-button" id="ar-button">
+        ARを試してみる
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </model-viewer>
+
+    <model-viewer
+      id="model-viewer-ios"
+      src="src/handyfit1.glb"
+      ios-src="src/handyfit1.usdz"
+      alt="A 3D model of an milking machine"
+      shadow-intensity="1"
+      camera-controls=""
+      interaction-prompt="auto"
+      auto-rotate=""
+      ar=""
+      magic-leap=""
+      data-js-focus-visible=""
+      ar-status="not-presenting"
+    >
+      <button slot="ar-button" id="ar-button">
+        ARを試してみる
+        <i class="fas fa-angle-right"></i>
+      </button>
+    </model-viewer>
+
+
+
+    <p id="ar-description-text">
+      ボタンをクリックするとカメラが起動して<br />
+      AR体験をすることができます。<br />
+      ご自身でさく乳器のサイズを変更が可能です。
+      <br>
+      <br>
+      <small>※最初に表示されるサイズは、スマホの機種により実際のサイズ感とは異なる場合があります。</small>
+      <small>※Androidの一部端末はAR表示に対応しておりません。
+    </p>
+    <p id="pc-alert-text">
+      AR体験はスマートフォンでのみお楽しみいただけます。<br />
+      <small
+        >対応ブラウザ： iOS Safari / Android Google Chrome
+        (非対応端末あり)</small
+      >
+      PCからご覧の場合は、上の3Dモデルを回転して商品を360°閲覧することができます。<br />
+    </p>
+  </body>
+
+  <script src="main.js"></script>
+</html>
