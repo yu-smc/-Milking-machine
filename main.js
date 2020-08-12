@@ -14,6 +14,7 @@ if (
 ) {
 } else if (
   navigator.userAgent.indexOf("iPad") > 0 ||
+  (navigator.userAgent.indexOf("macintosh") > -1 && "ontouchend" in document) ||
   navigator.userAgent.indexOf("Android") > 0
 ) {
 } else {
