@@ -26,27 +26,7 @@
 
   <body>
     <model-viewer
-      id="model-viewer-default"
-      src="src/handyfit2.glb"
-      ios-src="src/handyfit2.usdz"
-      alt="A 3D model of an milking machine"
-      shadow-intensity="1"
-      camera-controls=""
-      interaction-prompt="auto"
-      auto-rotate=""
-      ar=""
-      magic-leap=""
-      data-js-focus-visible=""
-      ar-status="not-presenting"
-    >
-      <button slot="ar-button" id="ar-button">
-        ARを試してみる
-        <i class="fas fa-angle-right"></i>
-      </button>
-    </model-viewer>
-
-    <model-viewer
-      id="model-viewer-ios"
+      id="model-viewer"
       src="src/handyfit1.glb"
       ios-src="src/handyfit1.usdz"
       alt="A 3D model of an milking machine"
@@ -65,7 +45,9 @@
       </button>
     </model-viewer>
 
-
+    <p id="no-ar-msg">
+      この端末はAR表示非対応です
+    </p>
 
     <p id="ar-description-text">
       ボタンをクリックするとカメラが起動して<br />
